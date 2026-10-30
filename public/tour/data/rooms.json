@@ -1,0 +1,1490 @@
+{
+ "meta": {
+  "title": "Azalea Yard: concept design",
+  "disclaimer": "Concept design, not to scale for construction.",
+  "totalSf": 12000,
+  "footprint": "120 ft x 100 ft, one story",
+  "sfNote": "Room sizes are a concept allocation for this prototype; the plan files give only the 12,000 sf total.",
+  "costNote": "All dollar figures are from budget.json (full plan: lease + renovate 12,000 sf). Build-out share = room sf x $80/sf renovation hard cost. Equipment = itemized budget lines.",
+  "renoRate": 80.0,
+  "renoSource": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia",
+  "tierSource": "02-business-plan-budget-campaign.md, Giving tiers",
+  "budgetTotals": {
+   "startup": 1322538,
+   "ops": 1334536,
+   "total": 2657074,
+   "equipment": 81633.12
+  }
+ },
+ "wings": {
+  "create": {
+   "name": "Create",
+   "color": "#E07A5F"
+  },
+  "tech": {
+   "name": "Tech",
+   "color": "#2A9D8F"
+  },
+  "build": {
+   "name": "Build",
+   "color": "#E9A23B"
+  },
+  "well": {
+   "name": "Well",
+   "color": "#81B29A"
+  },
+  "navigate": {
+   "name": "Navigate",
+   "color": "#4A7BC8"
+  },
+  "shared": {
+   "name": "Shared",
+   "color": "#B8B2A7"
+  },
+  "site": {
+   "name": "Site",
+   "color": "#9AA5A0"
+  }
+ },
+ "tiers": [
+  {
+   "id": "seed",
+   "name": "Seed",
+   "amount": 85,
+   "funds": "One studio/work table (Lifetime 6 ft, $84.01)",
+   "item": "Lifetime 6 ft folding table"
+  },
+  {
+   "id": "maker",
+   "name": "Maker",
+   "amount": 480,
+   "funds": "One 3D printer (Bambu P1S, $479.99)",
+   "item": "Bambu Lab P1S 3D printer"
+  },
+  {
+   "id": "studio",
+   "name": "Studio",
+   "amount": 1500,
+   "funds": "One media/coding workstation (iMac M4, $1,479)",
+   "item": "Apple iMac 24in M4 (media/coding lab)"
+  },
+  {
+   "id": "kiln",
+   "name": "Kiln Club",
+   "amount": 2500,
+   "funds": "One ceramics kiln (Skutt KM-818, $2,499)",
+   "item": "Skutt KM-818 electric kiln"
+  },
+  {
+   "id": "mentor",
+   "name": "Mentor",
+   "amount": 31000,
+   "funds": "One year of a youth development staffer's wages (BLS Valdosta mean $30,910)",
+   "item": null
+  },
+  {
+   "id": "founding",
+   "name": "Founding Partner",
+   "amount": 100000,
+   "plus": true,
+   "funds": "Naming of a studio or lab (amount is a proposal)",
+   "item": null
+  }
+ ],
+ "rooms": [
+  {
+   "id": "lounge",
+   "name": "Youth Lounge",
+   "wing": "well",
+   "rect": [
+    0,
+    0,
+    24,
+    30
+   ],
+   "sf": 720,
+   "purpose": "A drop-in living room: couches, phone charging, snacks, a place to decompress between sessions and meet friends.",
+   "equipment": [],
+   "staff": [
+    {
+     "role": "Youth Development Staff (Recreation Workers)",
+     "wage": 30910,
+     "fte": 4,
+     "total": 123640,
+     "basis": "BLS Valdosta MSA mean (Recreation Workers)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 57600,
+    "basis": "720 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 57600,
+   "equipmentTotal": 0,
+   "naming": "space",
+   "furniture": "lounge",
+   "inBuilding": true
+  },
+  {
+   "id": "counseling",
+   "name": "Counseling Rooms (3)",
+   "wing": "well",
+   "rect": [
+    24,
+    0,
+    40,
+    30
+   ],
+   "sf": 480,
+   "purpose": "Three private, soundproofed rooms for one-on-one sessions with the licensed wellness counselor and for referrals to outside care.",
+   "equipment": [],
+   "staff": [
+    {
+     "role": "Wellness Counselor (licensed)",
+     "wage": 55590,
+     "fte": 1,
+     "total": 55590,
+     "basis": "BLS Valdosta MSA mean (Mental Health Counselors)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 38400,
+    "basis": "480 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 38400,
+   "equipmentTotal": 0,
+   "naming": "space",
+   "furniture": "counsel",
+   "inBuilding": true
+  },
+  {
+   "id": "lobby",
+   "name": "Lobby & Gallery",
+   "wing": "shared",
+   "rect": [
+    40,
+    0,
+    80,
+    30
+   ],
+   "sf": 1200,
+   "purpose": "Front door, front desk and check-in, plus a rotating gallery of youth work. The donor wall sits on the east side of the lobby.",
+   "equipment": [],
+   "staff": [
+    {
+     "role": "Front Desk / Receptionist",
+     "wage": 31930,
+     "fte": 1,
+     "total": 31930,
+     "basis": "BLS Valdosta MSA mean (Receptionists)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 96000,
+    "basis": "1,200 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 96000,
+   "equipmentTotal": 0,
+   "naming": "space",
+   "furniture": "lobby",
+   "inBuilding": true
+  },
+  {
+   "id": "navigate",
+   "name": "Career & Resource Center",
+   "wing": "navigate",
+   "rect": [
+    80,
+    0,
+    104,
+    30
+   ],
+   "sf": 720,
+   "purpose": "The resource desk: job and college applications, resumes, IDs, benefits, transportation and housing referrals, and connections to local programs.",
+   "equipment": [
+    {
+     "item": "Dell Latitude 5430 16GB (refurb, loaner laptops)",
+     "unit": 349.99,
+     "qty": 15,
+     "total": 5249.85,
+     "source": "https://www.walmart.com/ip/Dell-Latitude-5430-14-16GB-512GB-SSD-Core-i7-1255U-1-8GHz-WIN11P-Grey-Fair/21104822429"
+    }
+   ],
+   "staff": [
+    {
+     "role": "Career & Resource Navigator",
+     "wage": 60060,
+     "fte": 1,
+     "total": 60060,
+     "basis": "BLS Valdosta MSA mean (Educ/Guidance/Career Counselors)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 57600,
+    "basis": "720 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 62849.85,
+   "equipmentTotal": 5249.85,
+   "naming": "space",
+   "furniture": "navigate",
+   "inBuilding": true
+  },
+  {
+   "id": "offices",
+   "name": "Staff Offices",
+   "wing": "shared",
+   "rect": [
+    104,
+    0,
+    120,
+    30
+   ],
+   "sf": 480,
+   "purpose": "Administration, development and program management.",
+   "equipment": [],
+   "staff": [
+    {
+     "role": "Executive Director",
+     "wage": 73420,
+     "fte": 1,
+     "total": 73420,
+     "basis": "BLS Valdosta MSA mean (Social & Community Svc Mgr)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    },
+    {
+     "role": "Program Director",
+     "wage": 73420,
+     "fte": 1,
+     "total": 73420,
+     "basis": "BLS Valdosta MSA mean (Social & Community Svc Mgr)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    },
+    {
+     "role": "Development & Grants Manager",
+     "wage": 74650,
+     "fte": 1,
+     "total": 74650,
+     "basis": "BLS Georgia mean (Fundraisers)",
+     "source": "https://www.bls.gov/oes/current/oes_ga.htm"
+    },
+    {
+     "role": "Bookkeeper / Office Manager",
+     "wage": 44630,
+     "fte": 1,
+     "total": 44630,
+     "basis": "BLS Valdosta MSA mean (Bookkeeping Clerks)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 38400,
+    "basis": "480 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 38400,
+   "equipmentTotal": 0,
+   "naming": "space",
+   "furniture": "offices",
+   "inBuilding": true
+  },
+  {
+   "id": "corridor",
+   "name": "Main Corridor",
+   "wing": "shared",
+   "rect": [
+    0,
+    30,
+    120,
+    38
+   ],
+   "sf": 960,
+   "purpose": "8 ft circulation spine connecting every wing.",
+   "equipment": [],
+   "staff": [],
+   "buildout": {
+    "amount": 76800,
+    "basis": "960 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 76800,
+   "equipmentTotal": 0,
+   "naming": null,
+   "furniture": null,
+   "inBuilding": true
+  },
+  {
+   "id": "fitness",
+   "name": "Fitness & Rec Room",
+   "wing": "well",
+   "rect": [
+    0,
+    38,
+    30,
+    100
+   ],
+   "sf": 1860,
+   "purpose": "Open rec floor for table tennis, movement classes, games and fitness.",
+   "equipment": [
+    {
+     "item": "JOOLA Berkshire table tennis table",
+     "unit": 1399.99,
+     "qty": 2,
+     "total": 2799.98,
+     "source": "https://tabletennisstore.us/products/joola-berkshire-indoor-outdoor-table-tennis-table"
+    }
+   ],
+   "staff": [],
+   "buildout": {
+    "amount": 148800,
+    "basis": "1,860 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 151599.98,
+   "equipmentTotal": 2799.98,
+   "naming": "space",
+   "furniture": "fitness",
+   "inBuilding": true
+  },
+  {
+   "id": "art",
+   "name": "Art Studio",
+   "wing": "create",
+   "rect": [
+    30,
+    38,
+    50,
+    68
+   ],
+   "sf": 600,
+   "purpose": "Drawing, painting, printmaking and mixed media. The plan's work tables live here and move between rooms.",
+   "equipment": [
+    {
+     "item": "Lifetime 6 ft folding table",
+     "unit": 84.01,
+     "qty": 40,
+     "total": 3360.4,
+     "source": "https://www.homedepot.com/p/reviews/Lifetime-6-ft-White-Plastic-Fold-In-Half-Table-Light-Commercial-280857/324972590/5"
+    }
+   ],
+   "staff": [
+    {
+     "role": "Visual Arts & Ceramics Instructor",
+     "wage": 57200,
+     "fte": 1,
+     "total": 57200,
+     "basis": "BLS Valdosta MSA mean (Self-Enrichment Teachers)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 48000,
+    "basis": "600 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 51360.4,
+   "equipmentTotal": 3360.4,
+   "naming": "studio",
+   "furniture": "art",
+   "inBuilding": true
+  },
+  {
+   "id": "ceramics",
+   "name": "Ceramics Studio",
+   "wing": "create",
+   "rect": [
+    30,
+    68,
+    50,
+    100
+   ],
+   "sf": 640,
+   "purpose": "Wheel throwing, hand building and glazing, with a vented kiln corner.",
+   "equipment": [
+    {
+     "item": "Skutt KM-818 electric kiln",
+     "unit": 2499.0,
+     "qty": 2,
+     "total": 4998.0,
+     "source": "https://www.clay-king.com/product/skutt-km-818-ceramic-kiln/"
+    },
+    {
+     "item": "Shimpo VL-Whisper pottery wheel",
+     "unit": 1699.0,
+     "qty": 8,
+     "total": 13592.0,
+     "source": "https://www.sheffield-pottery.com/products/shimpo-vl-whisper-pottery-wheel-in-store-pickup"
+    }
+   ],
+   "staff": [],
+   "buildout": {
+    "amount": 51200,
+    "basis": "640 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 69790.0,
+   "equipmentTotal": 18590.0,
+   "naming": "studio",
+   "furniture": "ceramics",
+   "inBuilding": true
+  },
+  {
+   "id": "music",
+   "name": "Music & Recording Booths",
+   "wing": "create",
+   "rect": [
+    50,
+    38,
+    66,
+    68
+   ],
+   "sf": 480,
+   "purpose": "A control room and isolation booths for recording, producing and practice.",
+   "equipment": [
+    {
+     "item": "Focusrite Scarlett 18i20 audio interface",
+     "unit": 769.99,
+     "qty": 1,
+     "total": 769.99,
+     "source": "https://chucklevins.com/products/focusrite-scarlett-18i20-4th-gen-18-in-20-out-usb-audio-interface-with-four-4th-gen-scarlett-mic-preamps-preorder"
+    },
+    {
+     "item": "Shure SM7B microphone",
+     "unit": 439.0,
+     "qty": 4,
+     "total": 1756.0,
+     "source": "https://www.performanceaudio.com/products/shure-sm7b-vocal-microphone"
+    },
+    {
+     "item": "Yamaha HS8 studio monitors (pair)",
+     "unit": 797.98,
+     "qty": 2,
+     "total": 1595.96,
+     "source": "https://www.sweetwater.com/store/detail/HS8pr--yamaha-hs8-8-inch-powered-studio-monitor-pair-black"
+    },
+    {
+     "item": "Yamaha P-145 88-key digital piano",
+     "unit": 499.99,
+     "qty": 4,
+     "total": 1999.96,
+     "source": "https://www.guitarcenter.com/Yamaha/P-145B-88-Key-Digital-Piano-Black-1500000486978.gc"
+    }
+   ],
+   "staff": [
+    {
+     "role": "Music & Audio Production Instructor",
+     "wage": 57200,
+     "fte": 1,
+     "total": 57200,
+     "basis": "BLS Valdosta MSA mean (Self-Enrichment Teachers)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 38400,
+    "basis": "480 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 44521.91,
+   "equipmentTotal": 6121.91,
+   "naming": "studio",
+   "furniture": "music",
+   "inBuilding": true
+  },
+  {
+   "id": "screening",
+   "name": "Screening Room",
+   "wing": "create",
+   "rect": [
+    66,
+    38,
+    82,
+    68
+   ],
+   "sf": 480,
+   "purpose": "Small screening theater for reviewing cuts, premieres and workshops.",
+   "equipment": [],
+   "staff": [],
+   "buildout": {
+    "amount": 38400,
+    "basis": "480 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 38400,
+   "equipmentTotal": 0,
+   "naming": "studio",
+   "furniture": "screening",
+   "inBuilding": true
+  },
+  {
+   "id": "coding",
+   "name": "Computer, AI & Coding Lab",
+   "wing": "tech",
+   "rect": [
+    82,
+    38,
+    104,
+    68
+   ],
+   "sf": 660,
+   "purpose": "Workstations for coding, AI tools, game design, editing and design software.",
+   "equipment": [
+    {
+     "item": "Apple iMac 24in M4 (media/coding lab)",
+     "unit": 1479.0,
+     "qty": 20,
+     "total": 29580.0,
+     "source": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-computers-24-imac-desktop-computer-with-m4-chip-blue-late-2024"
+    }
+   ],
+   "staff": [
+    {
+     "role": "Digital Media & Coding Instructor",
+     "wage": 57200,
+     "fte": 1,
+     "total": 57200,
+     "basis": "BLS Valdosta MSA mean (Self-Enrichment Teachers)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 52800,
+    "basis": "660 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 82380.0,
+   "equipmentTotal": 29580.0,
+   "naming": "studio",
+   "furniture": "coding",
+   "inBuilding": true
+  },
+  {
+   "id": "restrooms",
+   "name": "Restrooms",
+   "wing": "shared",
+   "rect": [
+    104,
+    38,
+    120,
+    68
+   ],
+   "sf": 480,
+   "purpose": "Accessible restrooms.",
+   "equipment": [],
+   "staff": [
+    {
+     "role": "Custodian",
+     "wage": 31150,
+     "fte": 1,
+     "total": 31150,
+     "basis": "BLS Valdosta MSA mean (Janitors)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 38400,
+    "basis": "480 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 38400,
+   "equipmentTotal": 0,
+   "naming": null,
+   "furniture": "restrooms",
+   "inBuilding": true
+  },
+  {
+   "id": "film",
+   "name": "Film & Media Studio",
+   "wing": "create",
+   "rect": [
+    50,
+    68,
+    74,
+    100
+   ],
+   "sf": 768,
+   "purpose": "Shooting stage with a backdrop wall for film, video, photo and podcasts.",
+   "equipment": [
+    {
+     "item": "Sony ZV-E10 camera + 16-50mm lens",
+     "unit": 622.99,
+     "qty": 6,
+     "total": 3737.94,
+     "source": "https://www.lowes.com/pd/Sony-ZV-E10-Mirrorless-Camera-Black-with-E-PZ-16-50mm-F35-56-OSS-II-Lens/5023622492"
+    }
+   ],
+   "staff": [],
+   "buildout": {
+    "amount": 61440,
+    "basis": "768 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 65177.94,
+   "equipmentTotal": 3737.94,
+   "naming": "studio",
+   "furniture": "film",
+   "inBuilding": true
+  },
+  {
+   "id": "printing",
+   "name": "3D Printing Lab",
+   "wing": "tech",
+   "rect": [
+    74,
+    68,
+    90,
+    100
+   ],
+   "sf": 512,
+   "purpose": "Digital fabrication: 3D modeling and printing.",
+   "equipment": [
+    {
+     "item": "Bambu Lab P1S 3D printer",
+     "unit": 479.99,
+     "qty": 4,
+     "total": 1919.96,
+     "source": "https://www.bestbuy.com/product/bambu-lab-p1s-combo-3d-printer-black/CZTZV9Z2C4/sku/6609661"
+    }
+   ],
+   "staff": [],
+   "buildout": {
+    "amount": 40960,
+    "basis": "512 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 42879.96,
+   "equipmentTotal": 1919.96,
+   "naming": "studio",
+   "furniture": "printing",
+   "inBuilding": true
+  },
+  {
+   "id": "shop",
+   "name": "Wood & Metal Shop",
+   "wing": "build",
+   "rect": [
+    90,
+    68,
+    120,
+    100
+   ],
+   "sf": 960,
+   "purpose": "Skilled-trades shop for carpentry, welding and fabrication, with a roll-up door to the yard.",
+   "equipment": [
+    {
+     "item": "SawStop Jobsite Pro table saw",
+     "unit": 1699.0,
+     "qty": 1,
+     "total": 1699.0,
+     "source": "https://www.toolnut.com/products/sawstop-jss-120a60-jobsite-pro-table-saw-with-cart-fence"
+    },
+    {
+     "item": "DeWalt 20V MAX 10-tool combo kit",
+     "unit": 919.52,
+     "qty": 4,
+     "total": 3678.08,
+     "source": "https://www.acmetools.com/dewalt-20v-max-10-tool-combo-kit-dck1020d2/885911533904.html"
+    },
+    {
+     "item": "Hobart Handler 210 MVP MIG welder",
+     "unit": 1224.0,
+     "qty": 4,
+     "total": 4896.0,
+     "source": "https://bakersgas.com/products/hobart-500553"
+    }
+   ],
+   "staff": [
+    {
+     "role": "Skilled Trades Instructor",
+     "wage": 57200,
+     "fte": 1,
+     "total": 57200,
+     "basis": "BLS Valdosta MSA mean (Self-Enrichment Teachers)",
+     "source": "https://www.bls.gov/oes/current/oes_46660.htm"
+    }
+   ],
+   "buildout": {
+    "amount": 76800,
+    "basis": "960 sf x $80/sf renovation hard cost",
+    "source": "https://noboconstruction.com/blog/commercial-tenant-improvement-costs-georgia"
+   },
+   "fundTotal": 87073.08,
+   "equipmentTotal": 10273.08,
+   "naming": "studio",
+   "furniture": "shop",
+   "inBuilding": true
+  },
+  {
+   "id": "court",
+   "name": "Outdoor Court",
+   "wing": "site",
+   "rect": [
+    132,
+    25,
+    226,
+    75
+   ],
+   "sf": 4700,
+   "purpose": "Full-size outdoor basketball court (94 x 50 ft) for pickup games and events.",
+   "equipment": [],
+   "staff": [],
+   "buildout": null,
+   "fundTotal": null,
+   "equipmentTotal": 0,
+   "naming": "space",
+   "furniture": "court",
+   "inBuilding": false,
+   "notPriced": "Not priced in budget.json (the lease + renovate plan has no court or parking line)."
+  },
+  {
+   "id": "parking",
+   "name": "Parking (60 spaces)",
+   "wing": "site",
+   "rect": [
+    0,
+    -96,
+    120,
+    -14
+   ],
+   "sf": 9840,
+   "purpose": "60 surface spaces, the Valdosta LDR Ch. 222 minimum of 5 per 1,000 sf for a recreation center (from 05-brookwood-site-and-rebudget.md).",
+   "equipment": [],
+   "staff": [],
+   "buildout": null,
+   "fundTotal": null,
+   "equipmentTotal": 0,
+   "naming": null,
+   "furniture": "parking",
+   "inBuilding": false,
+   "notPriced": "Not priced in budget.json (the lease + renovate plan has no court or parking line)."
+  }
+ ],
+ "slots": [
+  {
+   "id": "room:lounge",
+   "label": "Youth Lounge",
+   "kind": "room",
+   "room": "lounge",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "room:counseling",
+   "label": "Counseling Rooms (3)",
+   "kind": "room",
+   "room": "counseling",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "room:lobby",
+   "label": "Lobby & Gallery",
+   "kind": "room",
+   "room": "lobby",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "room:navigate",
+   "label": "Career & Resource Center",
+   "kind": "room",
+   "room": "navigate",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "room:offices",
+   "label": "Staff Offices",
+   "kind": "room",
+   "room": "offices",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "room:fitness",
+   "label": "Fitness & Rec Room",
+   "kind": "room",
+   "room": "fitness",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "room:art",
+   "label": "Art Studio",
+   "kind": "room",
+   "room": "art",
+   "tier": "founding",
+   "status": "plan"
+  },
+  {
+   "id": "room:ceramics",
+   "label": "Ceramics Studio",
+   "kind": "room",
+   "room": "ceramics",
+   "tier": "founding",
+   "status": "plan"
+  },
+  {
+   "id": "room:music",
+   "label": "Music & Recording Booths",
+   "kind": "room",
+   "room": "music",
+   "tier": "founding",
+   "status": "plan"
+  },
+  {
+   "id": "room:screening",
+   "label": "Screening Room",
+   "kind": "room",
+   "room": "screening",
+   "tier": "founding",
+   "status": "plan"
+  },
+  {
+   "id": "room:coding",
+   "label": "Computer, AI & Coding Lab",
+   "kind": "room",
+   "room": "coding",
+   "tier": "founding",
+   "status": "plan"
+  },
+  {
+   "id": "room:film",
+   "label": "Film & Media Studio",
+   "kind": "room",
+   "room": "film",
+   "tier": "founding",
+   "status": "plan"
+  },
+  {
+   "id": "room:printing",
+   "label": "3D Printing Lab",
+   "kind": "room",
+   "room": "printing",
+   "tier": "founding",
+   "status": "plan"
+  },
+  {
+   "id": "room:shop",
+   "label": "Wood & Metal Shop",
+   "kind": "room",
+   "room": "shop",
+   "tier": "founding",
+   "status": "plan"
+  },
+  {
+   "id": "room:court",
+   "label": "Outdoor Court",
+   "kind": "room",
+   "room": "court",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "wing:create",
+   "label": "Create Wing",
+   "kind": "wing",
+   "wing": "create",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "wing:tech",
+   "label": "Tech Wing",
+   "kind": "wing",
+   "wing": "tech",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "wing:build",
+   "label": "Build Wing",
+   "kind": "wing",
+   "wing": "build",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "wing:well",
+   "label": "Well Wing",
+   "kind": "wing",
+   "wing": "well",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "wing:navigate",
+   "label": "Navigate Wing",
+   "kind": "wing",
+   "wing": "navigate",
+   "tier": "founding",
+   "status": "proposed"
+  },
+  {
+   "id": "item:art:seed:1",
+   "label": "Lifetime 6 ft folding table #1",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:2",
+   "label": "Lifetime 6 ft folding table #2",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:3",
+   "label": "Lifetime 6 ft folding table #3",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:4",
+   "label": "Lifetime 6 ft folding table #4",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:5",
+   "label": "Lifetime 6 ft folding table #5",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:6",
+   "label": "Lifetime 6 ft folding table #6",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:7",
+   "label": "Lifetime 6 ft folding table #7",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:8",
+   "label": "Lifetime 6 ft folding table #8",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:9",
+   "label": "Lifetime 6 ft folding table #9",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:10",
+   "label": "Lifetime 6 ft folding table #10",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:11",
+   "label": "Lifetime 6 ft folding table #11",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:12",
+   "label": "Lifetime 6 ft folding table #12",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:13",
+   "label": "Lifetime 6 ft folding table #13",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:14",
+   "label": "Lifetime 6 ft folding table #14",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:15",
+   "label": "Lifetime 6 ft folding table #15",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:16",
+   "label": "Lifetime 6 ft folding table #16",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:17",
+   "label": "Lifetime 6 ft folding table #17",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:18",
+   "label": "Lifetime 6 ft folding table #18",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:19",
+   "label": "Lifetime 6 ft folding table #19",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:20",
+   "label": "Lifetime 6 ft folding table #20",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:21",
+   "label": "Lifetime 6 ft folding table #21",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:22",
+   "label": "Lifetime 6 ft folding table #22",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:23",
+   "label": "Lifetime 6 ft folding table #23",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:24",
+   "label": "Lifetime 6 ft folding table #24",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:25",
+   "label": "Lifetime 6 ft folding table #25",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:26",
+   "label": "Lifetime 6 ft folding table #26",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:27",
+   "label": "Lifetime 6 ft folding table #27",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:28",
+   "label": "Lifetime 6 ft folding table #28",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:29",
+   "label": "Lifetime 6 ft folding table #29",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:30",
+   "label": "Lifetime 6 ft folding table #30",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:31",
+   "label": "Lifetime 6 ft folding table #31",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:32",
+   "label": "Lifetime 6 ft folding table #32",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:33",
+   "label": "Lifetime 6 ft folding table #33",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:34",
+   "label": "Lifetime 6 ft folding table #34",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:35",
+   "label": "Lifetime 6 ft folding table #35",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:36",
+   "label": "Lifetime 6 ft folding table #36",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:37",
+   "label": "Lifetime 6 ft folding table #37",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:38",
+   "label": "Lifetime 6 ft folding table #38",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:39",
+   "label": "Lifetime 6 ft folding table #39",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:art:seed:40",
+   "label": "Lifetime 6 ft folding table #40",
+   "kind": "item",
+   "room": "art",
+   "tier": "seed",
+   "status": "plan"
+  },
+  {
+   "id": "item:ceramics:kiln:1",
+   "label": "Skutt KM-818 electric kiln #1",
+   "kind": "item",
+   "room": "ceramics",
+   "tier": "kiln",
+   "status": "plan"
+  },
+  {
+   "id": "item:ceramics:kiln:2",
+   "label": "Skutt KM-818 electric kiln #2",
+   "kind": "item",
+   "room": "ceramics",
+   "tier": "kiln",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:1",
+   "label": "Apple iMac 24in M4 #1",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:2",
+   "label": "Apple iMac 24in M4 #2",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:3",
+   "label": "Apple iMac 24in M4 #3",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:4",
+   "label": "Apple iMac 24in M4 #4",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:5",
+   "label": "Apple iMac 24in M4 #5",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:6",
+   "label": "Apple iMac 24in M4 #6",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:7",
+   "label": "Apple iMac 24in M4 #7",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:8",
+   "label": "Apple iMac 24in M4 #8",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:9",
+   "label": "Apple iMac 24in M4 #9",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:10",
+   "label": "Apple iMac 24in M4 #10",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:11",
+   "label": "Apple iMac 24in M4 #11",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:12",
+   "label": "Apple iMac 24in M4 #12",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:13",
+   "label": "Apple iMac 24in M4 #13",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:14",
+   "label": "Apple iMac 24in M4 #14",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:15",
+   "label": "Apple iMac 24in M4 #15",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:16",
+   "label": "Apple iMac 24in M4 #16",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:17",
+   "label": "Apple iMac 24in M4 #17",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:18",
+   "label": "Apple iMac 24in M4 #18",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:19",
+   "label": "Apple iMac 24in M4 #19",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:coding:studio:20",
+   "label": "Apple iMac 24in M4 #20",
+   "kind": "item",
+   "room": "coding",
+   "tier": "studio",
+   "status": "plan"
+  },
+  {
+   "id": "item:printing:maker:1",
+   "label": "Bambu Lab P1S 3D printer #1",
+   "kind": "item",
+   "room": "printing",
+   "tier": "maker",
+   "status": "plan"
+  },
+  {
+   "id": "item:printing:maker:2",
+   "label": "Bambu Lab P1S 3D printer #2",
+   "kind": "item",
+   "room": "printing",
+   "tier": "maker",
+   "status": "plan"
+  },
+  {
+   "id": "item:printing:maker:3",
+   "label": "Bambu Lab P1S 3D printer #3",
+   "kind": "item",
+   "room": "printing",
+   "tier": "maker",
+   "status": "plan"
+  },
+  {
+   "id": "item:printing:maker:4",
+   "label": "Bambu Lab P1S 3D printer #4",
+   "kind": "item",
+   "room": "printing",
+   "tier": "maker",
+   "status": "plan"
+  },
+  {
+   "id": "staff:youthdev:1",
+   "label": "Youth Development Staffer, one year (position 1 of 4)",
+   "kind": "staff",
+   "room": "lounge",
+   "tier": "mentor",
+   "status": "plan"
+  },
+  {
+   "id": "staff:youthdev:2",
+   "label": "Youth Development Staffer, one year (position 2 of 4)",
+   "kind": "staff",
+   "room": "lounge",
+   "tier": "mentor",
+   "status": "plan"
+  },
+  {
+   "id": "staff:youthdev:3",
+   "label": "Youth Development Staffer, one year (position 3 of 4)",
+   "kind": "staff",
+   "room": "lounge",
+   "tier": "mentor",
+   "status": "plan"
+  },
+  {
+   "id": "staff:youthdev:4",
+   "label": "Youth Development Staffer, one year (position 4 of 4)",
+   "kind": "staff",
+   "room": "lounge",
+   "tier": "mentor",
+   "status": "plan"
+  }
+ ]
+}
