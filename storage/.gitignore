@@ -1,0 +1,8 @@
+form.key
+spam.jsonl
+submissions/*
+!submissions/.gitkeep
+rate/*
+!rate/.gitkeep
+outbox/*
+!outbox/.gitkeep

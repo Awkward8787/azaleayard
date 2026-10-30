@@ -1,0 +1,9 @@
+storage/form.key
+storage/spam.jsonl
+storage/submissions/*
+!storage/submissions/.gitkeep
+storage/rate/*
+!storage/rate/.gitkeep
+storage/outbox/*
+!storage/outbox/.gitkeep
+.DS_Store
